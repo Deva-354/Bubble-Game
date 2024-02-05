@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Gilroy';
+    box-sizing:border-box;
+}
+
+#header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(91, 100, 4);
+}
+
+#header h1 {
+    color:  #f3f1b3;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#byline {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px 0 0;
+}
+
+html,body{
+    width:100%;
+    height:100%
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(7, 2, 53)
+}
+
+#panel{
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: #f3f1b3;
+}
+
+#ptop{
+    padding: 0px 30%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: #ebedc5;
+    width: 100%;
+    height: 100px;
+    background-color:rgb(91, 100, 4);
+}
+
+.elem{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.elem h2{
+    font-weight:500;
+    font-size: 17px;
+}
+
+.box{
+    color: rgb(208, 222, 151);
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px 20px;
+    background-color:rgb(8, 8, 71);
+    border-radius: 5px;
+}
+
+#pbtm{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    width:100%;
+    height:calc(100%-100px);
+
+}
+
+
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:20px;
+    height:20px;
+    background-color:rgb(24, 8, 81);
+    color: #e1ecb6;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(188, 199, 127);
+    color: #170539;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bubble {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes scoreAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.box {
+    animation: scoreAnimation 0.5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    #ptop {
+        padding: 0px 10%;
+    }
+
+    .elem h2 {
+        font-size: 15px;
+    }
+
+    .box {
+        font-size: 18px;
+    }
+}
